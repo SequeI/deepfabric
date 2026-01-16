@@ -23,6 +23,8 @@ env:
 
 jobs:
   build:
+    # Only run on the main repository, not on forks
+    if: github.repository == 'always-further/deepfabric'
     name: Build ${{ matrix.platform }}
     runs-on: ${{ matrix.runner }}
     permissions:
@@ -89,7 +91,8 @@ jobs:
   merge:
     name: Merge and Push Manifest
     runs-on: ubuntu-latest
-    if: github.event_name != 'pull_request'
+    # Only run on the main repository, not on forks
+    if: github.repository == 'always-further/deepfabric' && github.event_name != 'pull_request'
     needs: build
     permissions:
       contents: read

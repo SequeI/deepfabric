@@ -6,6 +6,8 @@ on:
 
 jobs:
   pypi-publish:
+    # Only run on the main repository, not on forks
+    if: github.repository == 'always-further/deepfabric'
     name: Upload release to PyPI
     runs-on: ubuntu-latest
     environment:
