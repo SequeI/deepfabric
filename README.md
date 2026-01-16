@@ -27,6 +27,9 @@
     <a href="https://pypi.org/project/deepfabric/">
       <img src="https://img.shields.io/pypi/v/deepfabric.svg" alt="PyPI Version"/>
     </a>
+    <a href="https://www.python.org/downloads/">
+      <img src="https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue.svg" alt="Python Versions"/>
+    </a>
     <a href="https://pepy.tech/project/deepfabric">
       <img src="https://static.pepy.tech/badge/deepfabric" alt="Downloads"/>
     </a>
@@ -552,6 +555,20 @@ cd deepfabric
 uv sync --all-extras
 make test
 ```
+
+### Python Version Compatibility
+
+DeepFabric is tested and supported on Python 3.10, 3.11, 3.12, 3.13, and 3.14:
+
+| Python Version | Status |
+|----------------|--------|
+| 3.10 | ✅ Fully supported |
+| 3.11 | ✅ Fully supported |
+| 3.12 | ✅ Fully supported |
+| 3.13 | ✅ Fully supported |
+| 3.14 | ✅ Supported (experimental) |
+
+> **Note:** Python 3.14 support is experimental as some dependencies may not yet have pre-built wheels. We recommend Python 3.11+ for production use.
 
 ## Analytics
 

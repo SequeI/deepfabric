@@ -30,6 +30,9 @@ hide:
     <a href="https://pypi.org/project/deepfabric/">
       <img src="https://img.shields.io/pypi/v/deepfabric.svg" alt="PyPI Version"/>
     </a>
+    <a href="https://www.python.org/downloads/">
+      <img src="https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue.svg" alt="Python Versions"/>
+    </a>
     <a href="https://discord.gg/pPcjYzGvbS">
       <img src="https://img.shields.io/discord/1384081906773131274?color=7289da&label=Discord&logo=discord&logoColor=white" alt="Discord"/>
     </a>
