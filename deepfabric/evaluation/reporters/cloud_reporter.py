@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 import os
 
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import TYPE_CHECKING
 
@@ -115,7 +115,7 @@ class CloudReporter(BaseReporter):
             # Create evaluation run
             run_data = {
                 "pipeline_id": self.project_id,
-                "name": f"Evaluation - {datetime.now(UTC).strftime('%Y-%m-%d %H:%M')}",
+                "name": f"Evaluation - {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M')}",
                 "model_name": model_name,
                 "model_provider": result.config.inference_config.backend,
                 "config": {
